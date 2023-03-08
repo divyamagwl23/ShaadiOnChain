@@ -1,0 +1,119 @@
+.newcard{
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 18px -9px rgba(0, 0,
+    0, 0.75);
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+    width: 240px;
+    height: 300px;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #191c24;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    color: white;
+    text-align: left;
+
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.newcard__infoValueParent{
+    /* display: flex;
+    flex: 1;
+    flex-direction: column; */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.newcard:hover{
+    transform: scale(1.07);
+}
+
+.newcard > img{
+    object-fit: cover;
+    width: 100%;
+    /* min-width: 300px; */
+    /* min-height: 200px; */
+    height: 160px;
+}
+
+.newcard__info{
+    border-radius: 10px;
+    /* padding: 20px; */
+    /* padding-top: 20px; */
+    padding-top: 10px;
+    border: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.newcard__info > h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 600;
+}   
+
+.newcard__info > h4 {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px ;
+
+    /* overflow: scroll; */
+}
+
+
+.newcard__infoValue{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    /* padding: 4px;
+
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba(31, 30, 39, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 15px; */
+    /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+
+.newcard__infoValue > .symbol{
+    font-size: x-large; 
+}
+
+.newcard__infoValue > h3{
+    margin: 0px;
+}
+
+.newcard__infoValue > h4{
+    margin: 0px 4px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba( 1, 0, 0, 0.10 );
+    /* box-shadow: 0 8px 32px 0 rgba(177, 75, 245, 0.4); */
+    backdrop-filter: blur( 1.0px );
+    -webkit-backdrop-filter: blur( 1.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    outline-width: 0;
+    color: white;
+    padding: 6px;
+    
+    box-sizing: border-box;
+    display: block;
+    border-radius: 8px;
+}
